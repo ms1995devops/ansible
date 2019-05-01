@@ -75,8 +75,8 @@
       resource_group: "{{ rg }}"
       name: "{{ VMname }}"
       vm_size: "{{ VMsize }}"
-      admin_username: {{ username }}
-      admin_password: {{ password }}
+      admin_username: "{{ username }}"
+      admin_password: "{{ password }}"
       network_interfaces: "{{ VMname }}-NIC"
       image:
         offer: CentOS
