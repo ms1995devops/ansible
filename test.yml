@@ -1,4 +1,7 @@
-- name: Create resource group
-  azure_rm_resourcegroup:
-    name: myResourceGroup
-    location: eastus
+---
+- hosts: localhost
+  tasks
+  - name: Create resource group
+    azure_rm_resourcegroup:
+      name: myResourceGroup
+      location: eastus
